@@ -18,7 +18,7 @@ namespace zhz{
             void updateCGPA(); 
 
         public:
-            Student(const string& name, const string& major, int id, int age);
+            Student(const string& name, const string& major, int age, int id);
 
             void setName(const string& name);   
             string getName() const;
