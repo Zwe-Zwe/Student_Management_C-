@@ -7,7 +7,7 @@
 using std::string;
 
 namespace zhz{
-    Student::Student(const string& name, const string& major, int id, int age): name_(name), major_(major), id_(id), age_(age), cgpa_(0.0f){}
+    Student::Student(const string& name, const string& major, int age, int id): name_(name), major_(major), age_(age), id_(id), cgpa_(0.0f){}
 
 
 void Student::updateCGPA(){

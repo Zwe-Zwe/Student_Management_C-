@@ -1,5 +1,3 @@
-# Makefile
-
 # Compiler
 CXX = clang++
 
@@ -10,22 +8,15 @@ CXXFLAGS = -std=c++17 -Wall -Wextra
 TARGET = main
 
 # Source files
-SRCS = main.cpp student.cpp
-
-# Object files
-OBJS = $(SRCS:.cpp=.o)
+SOURCES = main.cpp student.cpp
 
 # Default target
 all: $(TARGET)
 
 # Link the executable
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
+$(TARGET): $(SOURCES)
+	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(TARGET)
 
-# Compile source files to object files
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
-
-# Clean up
+# Clean up object files and executable
 clean:
-	rm -f $(TARGET) $(OBJS)
+	rm -f $(TARGET)
