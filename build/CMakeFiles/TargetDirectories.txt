@@ -1,0 +1,4 @@
+/mnt/partition4/Programming/C++/Student_Management_C-/build/CMakeFiles/StudentManagement.dir
+/mnt/partition4/Programming/C++/Student_Management_C-/build/CMakeFiles/clean_custom.dir
+/mnt/partition4/Programming/C++/Student_Management_C-/build/CMakeFiles/edit_cache.dir
+/mnt/partition4/Programming/C++/Student_Management_C-/build/CMakeFiles/rebuild_cache.dir
